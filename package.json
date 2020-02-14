@@ -4,12 +4,12 @@
   "description": "It is a starter pack for any ReactJS project that I will do in the future (hopefully).",
   "private": true,
   "scripts": {
-    "type-check": "tsc --noEmit",
-    "type-check:watch": "npm run type-check -- --watch",
+    "type:check": "tsc",
+    "type:watch": "tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open --config webpack.dev.js",
-    "prettify": "prettier --write \"src/**/*.js\"",
-    "prettify:check": "prettier --check \"src/**/*.js\"",
+    "prettify": "prettier --write \"src/**/*.ts*\"",
+    "prettify:check": "prettier --check \"src/**/*.ts*\"",
     "build": "webpack --config webpack.prod.js"
   },
   "devDependencies": {

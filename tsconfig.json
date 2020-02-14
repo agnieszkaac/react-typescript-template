@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "target": "esnext",
     "module": "commonjs",
+    "target": "es5",
     "declaration": true,
     "outDir": "dist",
     "strict": true,
     "sourceMap": true,
     "noImplicitAny": true,
     "jsx": "react",
-    "allowJs": true
+    "allowJs": true,
+    "noEmit": true
   }
 }
