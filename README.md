@@ -1,4 +1,4 @@
-#React JS template
+# React JS template
 
 This project template contains setup for building web app with following tech stack:
 
@@ -23,3 +23,7 @@ This project template contains setup for building web app with following tech st
 ## Build
 
 `yarn build`
+
+## Test
+
+`yarn test` or to run in watch mode `yarn test:watch`

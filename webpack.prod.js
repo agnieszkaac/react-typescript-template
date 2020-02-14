@@ -1,7 +1,7 @@
 const path = require("path");
-const merge = require('webpack-merge');
+const merge = require("webpack-merge");
 const common = require("./webpack.common");
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = merge(common, {
   mode: "production",
@@ -12,20 +12,20 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.scss$/,
-        include: path.resolve(__dirname, './src/stylesheets'),
+        include: path.resolve(__dirname, "./src/stylesheets"),
         use: [
           MiniCssExtractPlugin.loader,
           "css-loader",
           "sass-loader"
-        ]
-      }
-    ]
+        ],
+      },
+    ],
   },
   plugins: [
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin()
   ],
   externals: {
     "react": "React",
-    "react-dom": "ReactDOM"
+    "react-dom": "ReactDOM",
   }
 });

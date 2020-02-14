@@ -4,26 +4,26 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: {
-    app: "./src/index.tsx",
+    app: "./index.tsx",
   },
   output: {
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: "./index.html"
+      template: "./index.html",
     }),
   ],
   optimization: {
-    moduleIds: 'hashed',
+    moduleIds: "hashed",
     runtimeChunk: "single",
     splitChunks: {
       cacheGroups: {
         vendor: {
           test: /[\\/]node_modules[\\/]/,
-          name: 'vendors',
-          chunks: 'all',
+          name: "vendors",
+          chunks: "all",
         },
       },
     },
@@ -34,14 +34,14 @@ module.exports = {
         test: /\.tsx?$/,
         use: [
           {
-            loader: "babel-loader"
-          }
+            loader: "babel-loader",
+          },
         ],
         exclude: /node_modules/,
-      }
-    ]
+      },
+    ],
   },
   resolve: {
-    extensions: [ '.tsx', '.ts', '.js' ],
-  }
+    extensions: [".tsx", ".ts", ".js"],
+  },
 };
