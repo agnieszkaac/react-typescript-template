@@ -1,4 +1,4 @@
-# React JS template
+# React JS app template
 
 This project template contains setup for building web app with following tech stack:
 
@@ -6,7 +6,7 @@ This project template contains setup for building web app with following tech st
 - Typescript - static typing
 - Webpack - bundling the project
 - Babel - converting fresh JS code features into backwards compatible JS versions
-- SCSS - for styles
+- SCSS - styling
 
 ## Run
 
@@ -24,6 +24,10 @@ This project template contains setup for building web app with following tech st
 
 `yarn build`
 
+Bundled code will appear in _/dist_ folder
+
 ## Test
 
 `yarn test` or to run in watch mode `yarn test:watch`
+
+Go to `./coverage/lcov-report/index.html` to see graphical output of test coverage.
