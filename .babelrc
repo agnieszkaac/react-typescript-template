@@ -1,10 +1,17 @@
 {
   "presets": [
-    "@babel/env",
-    "@babel/react",
-    "@babel/typescript"
+    [
+      "@babel/env",
+      {
+        "loose": true,
+        "modules": false
+      }
+    ],
+    "@babel/typescript",
+    "@babel/react"
   ],
   "plugins": [
+    "react-hot-loader/babel",
     "@babel/proposal-class-properties",
     "@babel/proposal-object-rest-spread"
   ]
