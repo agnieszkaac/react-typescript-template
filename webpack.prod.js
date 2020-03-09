@@ -24,8 +24,15 @@ module.exports = merge(common, {
   plugins: [
     new MiniCssExtractPlugin()
   ],
-  externals: {
-    "react": "React",
-    "react-dom": "ReactDOM",
-  }
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendors",
+          chunks: "all",
+        },
+      },
+    },
+  },
 });

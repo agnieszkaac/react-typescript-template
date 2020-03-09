@@ -1,8 +1,14 @@
-import * as React from "react";
-import "./stylesheets/style.scss";
+import React from "react";
+import { hot } from "react-hot-loader/root";
 
-export class App extends React.PureComponent<{}> {
-  render(): React.ReactNode {
-    return <span>This is some react app...</span>;
-  }
-}
+import "./stylesheets/style.scss";
+import { Button } from "./common/Button";
+
+const App: React.FunctionComponent<{}> = ({}) => (
+  <>
+    <span>Testu testu..</span>
+    <Button label="MY button" />
+  </>
+);
+
+export default hot(App);
