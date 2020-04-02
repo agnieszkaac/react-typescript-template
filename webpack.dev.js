@@ -13,7 +13,7 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.scss$/,
-        include: path.resolve(__dirname, "src/stylesheets"),
+        include: path.resolve(__dirname, "src"),
         use: [
           // Creates `style` nodes from JS strings
           "style-loader",
