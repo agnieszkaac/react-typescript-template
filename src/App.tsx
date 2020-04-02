@@ -1,13 +1,12 @@
 import React from "react";
 import { hot } from "react-hot-loader/root";
 
-import "./stylesheets/style.scss";
-import { Button } from "./common/Button";
+import "./App.scss";
 
 const App: React.FunctionComponent<{}> = ({}) => (
   <>
-    <span>Testu testu..</span>
-    <Button label="MY button" />
+    <p>This is my ReactJS Typescript Webpack template.</p>
+    <p>I used SCSS for style definitions.</p>
   </>
 );
 
